@@ -1,10 +1,12 @@
 package effectivejava.chapter2.item2.javabeans;
 
-// JavaBeans Pattern - allows inconsistency, mandates mutability  (pages 11-12)
+/**
+ * JavaBeans模式 - 允许不一致，强制要求可变性（第11-12页）
+ */
 public class NutritionFacts {
-    // Parameters initialized to default values (if any)
-    private int servingSize  = -1; // Required; no default value
-    private int servings     = -1; // Required; no default value
+    // 参数初始化为默认值（如果有）
+    private int servingSize  = -1; // 必填;没有默认值
+    private int servings     = -1; // 必填;没有默认值
     private int calories     = 0;
     private int fat          = 0;
     private int sodium       = 0;

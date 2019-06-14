@@ -1,10 +1,12 @@
 package effectivejava.chapter2.item2.hierarchicalbuilder;
 import java.util.*;
 
-// Builder pattern for class hierarchies (Page 14)
-
-// Note that the underlying "simulated self-type" idiom  allows for arbitrary fluid hierarchies, not just builders
-
+/**
+ * 类层次结构的构建器模式（页14）
+ * 请注意，底层的“模拟自我类型”习语允许任意流体层次结构，而不仅仅是构建器
+ *
+ * 披萨
+ */
 public abstract class Pizza {
     public enum Topping { HAM, MUSHROOM, ONION, PEPPER, SAUSAGE }
     final Set<Topping> toppings;
@@ -18,7 +20,7 @@ public abstract class Pizza {
 
         abstract Pizza build();
 
-        // Subclasses must override this method to return "this"
+        // 子类必须重写此方法，返回 "this"
         protected abstract T self();
     }
     

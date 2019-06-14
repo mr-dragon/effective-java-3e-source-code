@@ -1,6 +1,8 @@
 package effectivejava.chapter2.item2.builder;
 
-// Builder Pattern  (Page 13)
+/**
+ * Builder 模式  (Page 13)
+ */
 public class NutritionFacts {
     private final int servingSize;
     private final int servings;
@@ -10,11 +12,11 @@ public class NutritionFacts {
     private final int carbohydrate;
 
     public static class Builder {
-        // Required parameters
+        // 必填参数
         private final int servingSize;
         private final int servings;
 
-        // Optional parameters - initialized to default values
+        // 可选参数 - 初始化一个默认值
         private int calories      = 0;
         private int fat           = 0;
         private int sodium        = 0;

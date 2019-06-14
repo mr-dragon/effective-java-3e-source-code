@@ -1,6 +1,8 @@
 package effectivejava.chapter2.item2.hierarchicalbuilder;
 
-// Subclass with hierarchical builder (Page 15)
+/**
+ * 带分层构建器的子类（页15）
+ */
 public class Calzone extends Pizza {
     private final boolean sauceInside;
 

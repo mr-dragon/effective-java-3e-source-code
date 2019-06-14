@@ -2,7 +2,11 @@ package effectivejava.chapter2.item2.hierarchicalbuilder;
 
 import java.util.Objects;
 
-// Subclass with hierarchical builder (Page 15)
+/**
+ * 带分层构建器的子类（页15）
+ *
+ * 我的披萨 ->  继承 Pizza
+ */
 public class NyPizza extends Pizza {
     public enum Size { SMALL, MEDIUM, LARGE }
     private final Size size;

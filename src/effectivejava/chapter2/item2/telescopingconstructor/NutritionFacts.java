@@ -1,13 +1,33 @@
 package effectivejava.chapter2.item2.telescopingconstructor;
 
-// Telescoping constructor pattern - does not scale well! (Pages 10-11)
+/**
+ * 伸缩构造函数模式 - 不能很好地扩展！ （第10-11页）
+ */
 public class NutritionFacts {
-    private final int servingSize;  // (mL)            required
-    private final int servings;     // (per container) required
-    private final int calories;     // (per serving)   optional
-    private final int fat;          // (g/serving)     optional
-    private final int sodium;       // (mg/serving)    optional
-    private final int carbohydrate; // (g/serving)     optional
+    /**
+     *  (mL)            必填
+     */
+    private final int servingSize;
+    /**
+     *   (per container) 必填
+     */
+    private final int servings;
+    /**
+     *  (per serving)   可选
+     */
+    private final int calories;
+    /**
+     *   (g/serving)     可选
+     */
+    private final int fat;
+    /**
+     *  (mg/serving)    可选
+     */
+    private final int sodium;
+    /**
+     *  (g/serving)     可选
+     */
+    private final int carbohydrate; 
 
     public NutritionFacts(int servingSize, int servings) {
         this(servingSize, servings, 0);
